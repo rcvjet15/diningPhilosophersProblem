@@ -172,7 +172,7 @@ public class DiningPhilosophersProgramSimple {
         }
 
         private PlateChopsticks getPlateChopsticks(int plateNumber) {
-            int left = plateNumber == 1 ? 5 : plateNumber - 1;
+            int left = plateNumber == 1 ? chopsticks.size() : plateNumber - 1;
             int right = plateNumber;
 
             PlateChopsticks plateChopsticks = new PlateChopsticks();
